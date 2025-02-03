@@ -1,0 +1,36 @@
+/**
+ * wrangler.json
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "my-iztro-worker",
+  "main": "src/index.js",
+  "compatibility_date": "2025-02-03",
+  "observability":
+  {
+    "enabled": true
+  },
+  "build":
+  {
+    "upload":
+    {
+      "format": "modules"
+    }
+  },
+  "unsafe":
+  {
+    "bindings": [
+    {
+      "name": "MY_RATE_LIMITER",
+      "type": "ratelimit",
+      "namespace_id": "1001",
+      "simple":
+      {
+        "limit": 10,
+        "period": 60
+      }
+    }]
+  }
+}
