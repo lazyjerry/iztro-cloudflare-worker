@@ -2,11 +2,11 @@
 
 ## 專案目的
 
-本專案旨在將 [Iztro](https://github.com/SylarLong/iztro) 函式庫整合至 Cloudflare Workers，提供一個基於 API 的服務，使用者可以透過 HTTP 請求獲取與生日、出生時間、性別等相關的紫微鬥數資訊。
+本專案旨在將 [Iztro](https://github.com/SylarLong/iztro) 函式庫整合至 Cloudflare Workers，提供一個基於 API 的服務，使用者可以透過 HTTP 請求獲取與生日、出生時間、性別等相關的紫微斗數資訊。
 
 ## 功能
 
-- **API 服務**：接受包含生日、出生時間、性別等參數的 HTTP GET 請求，返回相應的紫微鬥數資訊。
+- **API 服務**：接受包含生日、出生時間、性別等參數的 HTTP GET 請求，返回相應的紫微斗數資訊。
 - **使用說明頁面**：當請求缺少必要參數時，返回一個包含 API 使用說明和測試表單的 HTML 頁面，方便使用者瞭解如何使用該 API。
 - **速率限制**：為了防止濫用，對每個客戶端 IP 設置了每分鐘最多 10 次請求的限制。
 
@@ -51,7 +51,7 @@
 
 2. **本機開發和測試**：
 
-   使用 Wrangler 的本機開發功能，可以在本機測試您的 Worker：
+   開發操作步驟請詳閱[官方網站的文件](https://developers.cloudflare.com/workers/get-started/guide/)。本專案使用 Wrangler 的本機開發功能，可以在本機測試您的 Worker：
 
    ```bash
    npx wrangler dev
