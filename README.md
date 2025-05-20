@@ -2,7 +2,7 @@
 
 ## 專案目的
 
-本專案旨在將 [Iztro](https://github.com/SylarLong/iztro) 函式庫整合至 Cloudflare Workers，提供一個基於 API 的服務，使用者可以透過 HTTP 請求獲取與生日、出生時間、性別等相關的紫微斗數資訊。
+本專案旨在將 [Iztro](https://github.com/SylarLong/iztro) 函式庫整合至 Cloudflare Workers，提供一個基於 API 的服務，使用者可以透過 HTTP 請求獲取與生日、出生時間、性別等相關的紫微斗數資訊。 [DEMO 請點我](my-iztro-worker.crazyjerry.workers.dev)
 
 ## 功能
 
